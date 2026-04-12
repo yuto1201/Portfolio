@@ -1,6 +1,5 @@
 /* ── ダークモード ── */
 const html = document.documentElement;
-if(window.matchMedia('(prefers-color-scheme: dark)').matches) html.setAttribute('data-theme','dark');
 document.getElementById('themeToggle').addEventListener('click',()=>{
   html.setAttribute('data-theme', html.getAttribute('data-theme')==='dark' ? 'light' : 'dark');
 });
@@ -41,7 +40,7 @@ dotEl.className = 'dot'; dotEl.textContent = '.';
 heroName.appendChild(dotEl);
 
 /* ── タイピングアニメーション ── */
-const roles = ['iOS Developer 🍎','Systems Engineer ⚙️','App Creator 📱','Code & Coffee lover ☕'];
+const roles = ['iOS Developer','Systems Engineer','App Creator','Code & Coffee lover'];
 let ri = 0, ci = 0, del = false;
 const typEl = document.getElementById('typingText');
 function type(){
@@ -146,6 +145,28 @@ function toggleFaq(el){
   document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
   if(!isOpen) item.classList.add('open');
 }
+
+/* ── URL ハッシュで初期ページ切替 ── */
+(function(){
+  const h = location.hash.replace('#','');
+  if(h && pages.includes(h)) showPage(h);
+})();
+
+/* ── スクショ検証用: ?shot=home|about|... / ?shot=all ── */
+(function(){
+  const m = location.search.match(/shot=([a-z]+)/);
+  if(!m) return;
+  const which = m[1];
+  document.documentElement.setAttribute('data-theme','light');
+  const s = document.createElement('style');
+  const reveal = '.rv,.rv-l,.rv-r,.rv-pop,.hero-btns,.hero-stats,.hero-desc,.hero-typing-wrap,.page-title{opacity:1!important;transform:none!important;animation:none!important}*{animation-delay:0s!important}';
+  if(which === 'all'){
+    s.textContent = '#hero{min-height:auto!important;padding:90px 20px 60px}.page{display:block!important;opacity:1!important}'+reveal;
+  } else {
+    s.textContent = '#hero{min-height:auto!important;padding:90px 20px 60px}.page{display:none!important}#page-'+which+'{display:block!important;opacity:1!important}'+reveal;
+  }
+  document.head.appendChild(s);
+})();
 
 /* ── コンタクト送信 ── */
 function handleContactSend(){

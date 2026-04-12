@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Yuto's Portfolio 🍎</title>
+<title>Yuto's Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet"/>
@@ -14,7 +14,7 @@
 <!-- ═══ NAV ═══════════════════════════════════════ -->
 <nav id="nav">
   <button class="nav-logo" onclick="showPage('home')">
-    <span class="logo-emoji">🍎</span>Yuto<span>.</span>
+    <span class="logo-emoji ic" data-icon="apple"></span>Yuto<span>.</span>
   </button>
   <div class="nav-right">
     <ul>
@@ -24,9 +24,9 @@
       <li><a id="nav-contact"onclick="showPage('contact')" href="#">Contact</a></li>
     </ul>
     <button class="theme-toggle" id="themeToggle">
-      <span style="font-size:1rem">☀️</span>
+      <span class="ic theme-ic" data-icon="sun"></span>
       <div class="toggle-pill"></div>
-      <span style="font-size:1rem">🌙</span>
+      <span class="ic theme-ic" data-icon="moon"></span>
     </button>
   </div>
 </nav>
@@ -42,23 +42,23 @@
     <div class="deco dc dc1"></div><div class="deco dc dc2"></div>
     <div class="deco dc dc3"></div><div class="deco dc dc4"></div><div class="deco dc dc5"></div>
     <div class="deco ds ds1"></div><div class="deco ds ds2"></div>
-    <div class="dst dst1">⭐</div><div class="dst dst2">✨</div>
-    <div class="dst dst3">💫</div><div class="dst dst4">⭐</div>
+    <div class="dst dst1 ic" data-icon="star"></div><div class="dst dst2 ic" data-icon="sparkle"></div>
+    <div class="dst dst3 ic" data-icon="sparkle"></div><div class="dst dst4 ic" data-icon="star"></div>
     <div class="hero-inner">
-      <div class="hero-badge"><div class="badge-dot"></div>👋 こんにちは！</div>
+      <div class="hero-badge"><div class="badge-dot"></div><span class="ic inline-ic" data-icon="wave"></span>こんにちは！</div>
       <h1 class="hero-name" id="heroName"></h1>
       <div class="hero-typing-wrap">
         <div class="hero-typing"><span id="typingText"></span><span class="typing-cursor"></span></div>
       </div>
-      <p class="hero-desc">SwiftUI でアプリを作ったり、OutSystems で業務システムを作ったり。<br>コードで日常をちょっと楽しくすることが好きです 🌿</p>
+      <p class="hero-desc">SwiftUI でアプリを作ったり、OutSystems で業務システムを作ったり。<br>コードで日常をちょっと楽しくすることが好きです。</p>
       <div class="hero-btns">
-        <button onclick="showPage('apps')" class="btn btn-primary btn-shine">🚀 アプリを見る</button>
-        <a href="https://github.com/" target="_blank" class="btn btn-outline btn-shine">🐙 GitHub</a>
+        <button onclick="showPage('apps')" class="btn btn-primary btn-shine"><span class="ic inline-ic" data-icon="rocket"></span>アプリを見る</button>
+        <a href="https://github.com/yuto1201" target="_blank" rel="noopener" class="btn btn-outline btn-shine"><span class="ic inline-ic" data-icon="github"></span>GitHub</a>
       </div>
       <div class="hero-stats">
-        <div class="stat"><div class="stat-num" data-target="3">0</div><div class="stat-label">Apps in Dev 🛠️</div></div>
-        <div class="stat"><div class="stat-num" data-target="5">0</div><div class="stat-label">Years Coding 💻</div></div>
-        <div class="stat"><div class="stat-num" data-target="100">0</div><div class="stat-label">Cups of ☕</div></div>
+        <div class="stat"><div class="stat-num" data-target="3">0</div><div class="stat-label">Apps in Dev <span class="ic inline-ic" data-icon="wrench"></span></div></div>
+        <div class="stat"><div class="stat-num" data-target="5">0</div><div class="stat-label">Years Coding <span class="ic inline-ic" data-icon="laptop"></span></div></div>
+        <div class="stat"><div class="stat-num" data-target="100">0</div><div class="stat-label">Cups of <span class="ic inline-ic" data-icon="coffee"></span></div></div>
       </div>
     </div>
     <div class="scroll-hint">
@@ -69,57 +69,57 @@
 
   <!-- MARQUEE -->
   <div class="marquee-wrap"><div class="marquee-track">
-    <span class="marquee-item">SwiftUI <span class="mi">🍎</span></span>
-    <span class="marquee-item">SwiftData <span class="mi">✦</span></span>
-    <span class="marquee-item">CloudKit <span class="mi">☁️</span></span>
-    <span class="marquee-item">SpriteKit <span class="mi">🎮</span></span>
-    <span class="marquee-item">OutSystems <span class="mi">⚙️</span></span>
-    <span class="marquee-item">JavaScript <span class="mi">✦</span></span>
-    <span class="marquee-item">Python <span class="mi">🐍</span></span>
-    <span class="marquee-item">iOS Development <span class="mi">📱</span></span>
-    <span class="marquee-item">SwiftUI <span class="mi">🍎</span></span>
-    <span class="marquee-item">SwiftData <span class="mi">✦</span></span>
-    <span class="marquee-item">CloudKit <span class="mi">☁️</span></span>
-    <span class="marquee-item">SpriteKit <span class="mi">🎮</span></span>
-    <span class="marquee-item">OutSystems <span class="mi">⚙️</span></span>
-    <span class="marquee-item">JavaScript <span class="mi">✦</span></span>
-    <span class="marquee-item">Python <span class="mi">🐍</span></span>
-    <span class="marquee-item">iOS Development <span class="mi">📱</span></span>
+    <span class="marquee-item">SwiftUI <span class="mi ic" data-icon="apple"></span></span>
+    <span class="marquee-item">SwiftData <span class="mi ic" data-icon="sparkle"></span></span>
+    <span class="marquee-item">CloudKit <span class="mi ic" data-icon="cloud"></span></span>
+    <span class="marquee-item">SpriteKit <span class="mi ic" data-icon="gamepad"></span></span>
+    <span class="marquee-item">OutSystems <span class="mi ic" data-icon="gear"></span></span>
+    <span class="marquee-item">JavaScript <span class="mi ic" data-icon="sparkle"></span></span>
+    <span class="marquee-item">Python <span class="mi ic" data-icon="python"></span></span>
+    <span class="marquee-item">iOS Development <span class="mi ic" data-icon="phone"></span></span>
+    <span class="marquee-item">SwiftUI <span class="mi ic" data-icon="apple"></span></span>
+    <span class="marquee-item">SwiftData <span class="mi ic" data-icon="sparkle"></span></span>
+    <span class="marquee-item">CloudKit <span class="mi ic" data-icon="cloud"></span></span>
+    <span class="marquee-item">SpriteKit <span class="mi ic" data-icon="gamepad"></span></span>
+    <span class="marquee-item">OutSystems <span class="mi ic" data-icon="gear"></span></span>
+    <span class="marquee-item">JavaScript <span class="mi ic" data-icon="sparkle"></span></span>
+    <span class="marquee-item">Python <span class="mi ic" data-icon="python"></span></span>
+    <span class="marquee-item">iOS Development <span class="mi ic" data-icon="phone"></span></span>
   </div></div>
 
   <!-- ABOUT SNIPPET -->
   <section id="home-about" class="section-wrap">
     <div class="inner">
       <p class="eyebrow rv">About Me</p>
-      <h2 class="stitle rv">ちょっと自己紹介 <em>🙋</em></h2>
+      <h2 class="stitle rv">ちょっと自己紹介 <em class="ic em-ic" data-icon="hand"></em></h2>
       <div class="about-layout">
         <div class="rv-l">
           <div class="avatar-card">
-            <span class="avatar-emoji">👨‍💻</span>
+            <span class="avatar-emoji ic" data-icon="devPerson"></span>
             <div class="avatar-name">Yuto</div>
             <div class="avatar-role">iOS Dev &amp; Engineer</div>
             <hr class="avatar-divider"/>
             <div class="avatar-facts">
-              <div class="fact-row"><span class="fact-icon">📍</span><span class="fact-val">Japan</span></div>
-              <div class="fact-row"><span class="fact-icon">🎯</span><span class="fact-val">iOS Dev / OutSystems</span></div>
-              <div class="fact-row"><span class="fact-icon">🏯</span><span class="fact-val">神社仏閣 &amp; 御朱印</span></div>
-              <div class="fact-row"><span class="fact-icon">☕</span><span class="fact-val">カフェイン愛好家</span></div>
+              <div class="fact-row"><span class="fact-icon ic" data-icon="pin"></span><span class="fact-val">Japan</span></div>
+              <div class="fact-row"><span class="fact-icon ic" data-icon="target"></span><span class="fact-val">iOS Dev / OutSystems</span></div>
+              <div class="fact-row"><span class="fact-icon ic" data-icon="shrine"></span><span class="fact-val">神社仏閣 &amp; 御朱印</span></div>
+              <div class="fact-row"><span class="fact-icon ic" data-icon="coffee"></span><span class="fact-val">カフェイン愛好家</span></div>
             </div>
             <div class="avatar-badges">
-              <span class="av-badge">🍎 Swift</span><span class="av-badge">⚙️ OutSystems</span>
-              <span class="av-badge">🌿 CloudKit</span><span class="av-badge">🎮 SpriteKit</span>
+              <span class="av-badge"><span class="ic inline-ic" data-icon="apple"></span>Swift</span><span class="av-badge"><span class="ic inline-ic" data-icon="gear"></span>OutSystems</span>
+              <span class="av-badge"><span class="ic inline-ic" data-icon="cloud"></span>CloudKit</span><span class="av-badge"><span class="ic inline-ic" data-icon="gamepad"></span>SpriteKit</span>
             </div>
           </div>
         </div>
         <div class="about-content rv-r">
           <p><strong>iOSアプリ個人開発者</strong>兼<strong>業務システムエンジニア</strong>です。<br>平日は OutSystems で業務システムを作り、休日は SwiftUI で「ちょっと面白いアプリ」を作っています。</p>
-          <p>神社仏閣巡りと御朱印収集が趣味で、全国の神社データを調べているうちにアプリを作り始めました 🏯<br>コードも御朱印帳も、どちらも積み上がる一方です笑</p>
+          <p>神社仏閣巡りと御朱印収集が趣味で、全国の神社データを調べているうちにアプリを作り始めました。<br>コードも御朱印帳も、どちらも積み上がる一方です笑</p>
           <div class="about-quote">「コードを書くのも、御朱印を集めるのも、積み上げていく感じが好きです。気づいたらすごいところまで来てた、みたいな。」</div>
           <div class="story-cards">
-            <div class="story-card rv-pop" style="transition-delay:.05s"><span class="story-card-icon">📱</span><div class="story-card-title">iOS Development</div><div class="story-card-desc">SwiftUI + SwiftData + CloudKit でゼロからアプリを作れます</div></div>
-            <div class="story-card rv-pop" style="transition-delay:.1s"><span class="story-card-icon">⚙️</span><div class="story-card-title">OutSystems</div><div class="story-card-desc">業務システムの設計・実装・テストまで幅広く担当</div></div>
-            <div class="story-card rv-pop" style="transition-delay:.15s"><span class="story-card-icon">🏯</span><div class="story-card-title">御朱印 Lover</div><div class="story-card-desc">神社仏閣巡りが趣味。全国の神社データを調べるのが楽しい</div></div>
-            <div class="story-card rv-pop" style="transition-delay:.2s"><span class="story-card-icon">☕</span><div class="story-card-title">カフェイン管理</div><div class="story-card-desc">Monster Energy の摂取量を記録するアプリも開発中！</div></div>
+            <div class="story-card rv-pop" style="transition-delay:.05s"><span class="story-card-icon ic" data-icon="phone"></span><div class="story-card-title">iOS Development</div><div class="story-card-desc">SwiftUI + SwiftData + CloudKit でゼロからアプリを作れます</div></div>
+            <div class="story-card rv-pop" style="transition-delay:.1s"><span class="story-card-icon ic" data-icon="gear"></span><div class="story-card-title">OutSystems</div><div class="story-card-desc">業務システムの設計・実装・テストまで幅広く担当</div></div>
+            <div class="story-card rv-pop" style="transition-delay:.15s"><span class="story-card-icon ic" data-icon="shrine"></span><div class="story-card-title">御朱印 Lover</div><div class="story-card-desc">神社仏閣巡りが趣味。全国の神社データを調べるのが楽しい</div></div>
+            <div class="story-card rv-pop" style="transition-delay:.2s"><span class="story-card-icon ic" data-icon="coffee"></span><div class="story-card-title">カフェイン管理</div><div class="story-card-desc">Monster Energy の摂取量を記録するアプリも開発中！</div></div>
           </div>
           <div style="margin-top:28px"><button onclick="showPage('about')" class="btn btn-outline">もっと詳しく →</button></div>
         </div>
@@ -131,14 +131,14 @@
   <section id="home-skills" class="section-wrap">
     <div class="inner">
       <p class="eyebrow rv">Tech Stack</p>
-      <h2 class="stitle rv">できること <em>✨</em></h2>
+      <h2 class="stitle rv">できること <em class="ic em-ic" data-icon="sparkle"></em></h2>
       <div class="skills-grid">
-        <div class="skill-card sc-peach rv" style="transition-delay:.04s"><span class="skill-icon">🍎</span><div class="skill-name">SwiftUI</div><div class="skill-desc">SwiftData・CloudKit と組み合わせた本格iOSアプリ開発</div><div class="skill-tags"><span class="skill-tag">SwiftData</span><span class="skill-tag">CloudKit</span><span class="skill-tag">Combine</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="80" style="background:linear-gradient(90deg,#FF8C69,#FFD166)"></div></div><div class="skill-pct">80%</div></div>
-        <div class="skill-card sc-mint rv" style="transition-delay:.08s"><span class="skill-icon">⚙️</span><div class="skill-name">OutSystems</div><div class="skill-desc">業務システム開発・設計書作成・要件定義まで</div><div class="skill-tags"><span class="skill-tag">TAPS</span><span class="skill-tag">設計書</span><span class="skill-tag">SpreadJS</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="75" style="background:linear-gradient(90deg,#72D9B8,#85C7F2)"></div></div><div class="skill-pct">75%</div></div>
-        <div class="skill-card sc-yellow rv" style="transition-delay:.12s"><span class="skill-icon">📊</span><div class="skill-name">JavaScript</div><div class="skill-desc">SpreadJS・フロントエンド実装・DOM操作</div><div class="skill-tags"><span class="skill-tag">SpreadJS</span><span class="skill-tag">DOM</span><span class="skill-tag">ES6+</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="65" style="background:linear-gradient(90deg,#FFD166,#FF8C69)"></div></div><div class="skill-pct">65%</div></div>
-        <div class="skill-card sc-lav rv" style="transition-delay:.16s"><span class="skill-icon">🎮</span><div class="skill-name">SpriteKit</div><div class="skill-desc">2Dゲーム・パーティクル・アニメーション実装</div><div class="skill-tags"><span class="skill-tag">Physics</span><span class="skill-tag">Actions</span><span class="skill-tag">Particles</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="55" style="background:linear-gradient(90deg,#B8A9F0,#F5A0BE)"></div></div><div class="skill-pct">55%</div></div>
-        <div class="skill-card sc-sky rv" style="transition-delay:.2s"><span class="skill-icon">🐍</span><div class="skill-name">Python</div><div class="skill-desc">スクリプト・画像処理・PDF生成・自動化</div><div class="skill-tags"><span class="skill-tag">OpenCV</span><span class="skill-tag">ReportLab</span><span class="skill-tag">自動化</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="55" style="background:linear-gradient(90deg,#85C7F2,#72D9B8)"></div></div><div class="skill-pct">55%</div></div>
-        <div class="skill-card sc-pink rv" style="transition-delay:.24s"><span class="skill-icon">☁️</span><div class="skill-name">CloudKit</div><div class="skill-desc">iOSアプリのiCloud同期・データ永続化</div><div class="skill-tags"><span class="skill-tag">iCloud</span><span class="skill-tag">Sync</span><span class="skill-tag">SwiftData</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="50" style="background:linear-gradient(90deg,#F5A0BE,#B8A9F0)"></div></div><div class="skill-pct">50%</div></div>
+        <div class="skill-card sc-peach rv" style="transition-delay:.04s"><span class="skill-icon ic" data-icon="apple"></span><div class="skill-name">SwiftUI</div><div class="skill-desc">SwiftData・CloudKit と組み合わせた本格iOSアプリ開発</div><div class="skill-tags"><span class="skill-tag">SwiftData</span><span class="skill-tag">CloudKit</span><span class="skill-tag">Combine</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="80" style="background:linear-gradient(90deg,#FF8C69,#FFD166)"></div></div><div class="skill-pct">80%</div></div>
+        <div class="skill-card sc-mint rv" style="transition-delay:.08s"><span class="skill-icon ic" data-icon="gear"></span><div class="skill-name">OutSystems</div><div class="skill-desc">業務システム開発・設計書作成・要件定義まで</div><div class="skill-tags"><span class="skill-tag">TAPS</span><span class="skill-tag">設計書</span><span class="skill-tag">SpreadJS</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="75" style="background:linear-gradient(90deg,#72D9B8,#85C7F2)"></div></div><div class="skill-pct">75%</div></div>
+        <div class="skill-card sc-yellow rv" style="transition-delay:.12s"><span class="skill-icon ic" data-icon="chart"></span><div class="skill-name">JavaScript</div><div class="skill-desc">SpreadJS・フロントエンド実装・DOM操作</div><div class="skill-tags"><span class="skill-tag">SpreadJS</span><span class="skill-tag">DOM</span><span class="skill-tag">ES6+</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="65" style="background:linear-gradient(90deg,#FFD166,#FF8C69)"></div></div><div class="skill-pct">65%</div></div>
+        <div class="skill-card sc-lav rv" style="transition-delay:.16s"><span class="skill-icon ic" data-icon="gamepad"></span><div class="skill-name">SpriteKit</div><div class="skill-desc">2Dゲーム・パーティクル・アニメーション実装</div><div class="skill-tags"><span class="skill-tag">Physics</span><span class="skill-tag">Actions</span><span class="skill-tag">Particles</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="55" style="background:linear-gradient(90deg,#B8A9F0,#F5A0BE)"></div></div><div class="skill-pct">55%</div></div>
+        <div class="skill-card sc-sky rv" style="transition-delay:.2s"><span class="skill-icon ic" data-icon="python"></span><div class="skill-name">Python</div><div class="skill-desc">スクリプト・画像処理・PDF生成・自動化</div><div class="skill-tags"><span class="skill-tag">OpenCV</span><span class="skill-tag">ReportLab</span><span class="skill-tag">自動化</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="55" style="background:linear-gradient(90deg,#85C7F2,#72D9B8)"></div></div><div class="skill-pct">55%</div></div>
+        <div class="skill-card sc-pink rv" style="transition-delay:.24s"><span class="skill-icon ic" data-icon="cloud"></span><div class="skill-name">CloudKit</div><div class="skill-desc">iOSアプリのiCloud同期・データ永続化</div><div class="skill-tags"><span class="skill-tag">iCloud</span><span class="skill-tag">Sync</span><span class="skill-tag">SwiftData</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="50" style="background:linear-gradient(90deg,#F5A0BE,#B8A9F0)"></div></div><div class="skill-pct">50%</div></div>
       </div>
       <div style="margin-top:36px;text-align:center"><button onclick="showPage('skills')" class="btn btn-outline">スキル詳細を見る →</button></div>
     </div>
@@ -148,19 +148,15 @@
   <section id="home-apps" class="section-wrap">
     <div class="inner">
       <p class="eyebrow rv">Works</p>
-      <h2 class="stitle rv">作ったアプリたち <em>📱</em></h2>
+      <h2 class="stitle rv">作ったアプリたち <em class="ic em-ic" data-icon="phone"></em></h2>
       <div class="apps-grid">
         <div class="app-card rv" style="transition-delay:.04s">
-          <div class="app-thumb"><div class="app-thumb-bg" style="background:linear-gradient(135deg,#FFE5D9,#FFCBA4)"></div><div class="app-thumb-overlay"></div><span class="app-thumb-emoji">⚡</span></div>
-          <div class="app-body"><span class="app-tag-pill" style="background:rgba(255,140,105,.12);color:var(--peach)">🏃 Health &amp; Fitness</span><div class="app-name">App Name 01</div><div class="app-desc">アプリの説明をここに追加してください。どんな課題を解決するか書きましょう。</div><div class="app-footer"><a href="#" class="app-link">App Store で見る →</a><span class="app-platform">iOS</span></div></div>
+          <div class="app-thumb"><div class="app-thumb-bg" style="background:linear-gradient(135deg,#0F1F0C,#8CF208)"></div><div class="app-thumb-overlay"></div><span class="app-thumb-emoji ic" data-icon="coffee"></span></div>
+          <div class="app-body"><span class="app-tag-pill" style="background:rgba(114,217,184,.15);color:#2a9d7a"><span class="ic inline-ic" data-icon="coffee"></span>Health &amp; Fitness</span><div class="app-name">CafLog</div><div class="app-desc">カフェイン摂取量と代謝残量をリアルタイムで可視化。半減期シミュレーションで就寝時刻までの推移まで教えてくれる iOS アプリ。</div><div class="app-footer"><a href="https://apps.apple.com/us/app/caflog/id6760961086" target="_blank" rel="noopener" class="app-link">App Store で見る →</a><span class="app-platform">iOS</span></div></div>
         </div>
         <div class="app-card rv" style="transition-delay:.08s">
-          <div class="app-thumb"><div class="app-thumb-bg" style="background:linear-gradient(135deg,#EEE8FF,#D8CFFF)"></div><div class="app-thumb-overlay"></div><span class="app-thumb-emoji">🏯</span></div>
-          <div class="app-body"><span class="app-tag-pill" style="background:rgba(184,169,240,.15);color:#7c5cbf">🌸 Lifestyle</span><div class="app-name">App Name 02</div><div class="app-desc">アプリの説明をここに追加してください。どんな課題を解決するか書きましょう。</div><div class="app-footer"><a href="#" class="app-link">App Store で見る →</a><span class="app-platform">iOS</span></div></div>
-        </div>
-        <div class="app-card rv" style="transition-delay:.12s">
-          <div class="app-thumb"><div class="app-thumb-bg" style="background:linear-gradient(135deg,#DCFFF3,#B6F0DA)"></div><div class="app-thumb-overlay"></div><span class="app-thumb-emoji">🌸</span></div>
-          <div class="app-body"><span class="app-tag-pill" style="background:rgba(114,217,184,.15);color:#2a9d7a">🎯 Productivity</span><div class="app-name">App Name 03</div><div class="app-desc">アプリの説明をここに追加してください。どんな課題を解決するか書きましょう。</div><div class="app-footer"><a href="#" class="app-link">App Store で見る →</a><span class="app-platform">iOS</span></div></div>
+          <div class="app-thumb"><div class="app-thumb-bg" style="background:linear-gradient(135deg,#1a1a2e,#4a4a8e)"></div><div class="app-thumb-overlay"></div><span class="app-thumb-emoji ic" data-icon="clipboard"></span></div>
+          <div class="app-body"><span class="app-tag-pill" style="background:rgba(133,199,242,.15);color:#2d6ba3"><span class="ic inline-ic" data-icon="clipboard"></span>Productivity</span><div class="app-name">SubLog</div><div class="app-desc">サブスクリプションを棚卸しして、年間コストをひと目で把握できる iOS アプリ。App Store 審査準備中、近日公開予定。</div><div class="app-footer"><span class="app-link" style="color:var(--muted)">Coming Soon</span><span class="app-platform">iOS</span></div></div>
         </div>
       </div>
       <div style="margin-top:36px;text-align:center"><button onclick="showPage('apps')" class="btn btn-outline">全アプリを見る →</button></div>
@@ -171,27 +167,27 @@
   <section id="home-contact" class="section-wrap">
     <div class="inner">
       <p class="eyebrow rv">Contact</p>
-      <h2 class="stitle rv">お気軽にどうぞ <em>✉️</em></h2>
+      <h2 class="stitle rv">お気軽にどうぞ <em class="ic em-ic" data-icon="mail"></em></h2>
       <div class="contact-layout">
         <div class="rv-l">
-          <div class="contact-intro"><p>お仕事のご依頼・コラボ・ちょっとした質問、<br>なんでもお気軽にどうぞ 😊<br>2〜3営業日以内にお返しします！</p></div>
+          <div class="contact-intro"><p>お仕事のご依頼・コラボ・ちょっとした質問、<br>なんでもお気軽にどうぞ。<br>2〜3営業日以内にお返しします！</p></div>
           <div class="contact-links">
-            <a href="https://github.com/" target="_blank" class="c-link"><span class="c-icon">🐙</span><span>GitHub</span></a>
-            <a href="/cdn-cgi/l/email-protection#c9b0a6bcbb89aca4a8a0a5e7aaa6a4" class="c-link"><span class="c-icon">✉️</span><span><span class="__cf_email__" data-cfemail="ef96809a9daf8a828e8683c18c8082">[email&#160;protected]</span></span></a>
-            <a href="https://apps.apple.com/" target="_blank" class="c-link"><span class="c-icon">📱</span><span>App Store</span></a>
+            <a href="https://github.com/yuto1201" target="_blank" rel="noopener" class="c-link"><span class="c-icon ic" data-icon="github"></span><span>GitHub</span></a>
+            <a href="/cdn-cgi/l/email-protection#c9b0a6bcbb89aca4a8a0a5e7aaa6a4" class="c-link"><span class="c-icon ic" data-icon="mail"></span><span><span class="__cf_email__" data-cfemail="ef96809a9daf8a828e8683c18c8082">[email&#160;protected]</span></span></a>
+            <a href="https://apps.apple.com/" target="_blank" class="c-link"><span class="c-icon ic" data-icon="phone"></span><span>App Store</span></a>
           </div>
         </div>
         <div class="form rv-r">
-          <div class="form-row"><label>👤 お名前</label><input type="text" placeholder="山田 太郎"/></div>
-          <div class="form-row"><label>✉️ メールアドレス</label><input type="email" placeholder="hello@example.com"/></div>
-          <div class="form-row"><label>💬 メッセージ</label><textarea rows="5" placeholder="メッセージを入力してください 😊"></textarea></div>
-          <button class="btn-send">送信する ✈️</button>
+          <div class="form-row"><label><span class="ic inline-ic" data-icon="user"></span>お名前</label><input type="text" placeholder="山田 太郎"/></div>
+          <div class="form-row"><label><span class="ic inline-ic" data-icon="mail"></span>メールアドレス</label><input type="email" placeholder="hello@example.com"/></div>
+          <div class="form-row"><label><span class="ic inline-ic" data-icon="chat"></span>メッセージ</label><textarea rows="5" placeholder="メッセージを入力してください"></textarea></div>
+          <button class="btn-send">送信する<span class="ic inline-ic" data-icon="paperPlane"></span></button>
         </div>
       </div>
     </div>
   </section>
 
-  <footer><span class="footer-logo" onclick="showPage('home')">🍎 Yuto<span>.</span></span><p>© 2025 <a href="#" onclick="showPage('home')">Yuto</a>. Made with ❤️ &amp; ☕ in Japan</p></footer>
+  <footer><span class="footer-logo" onclick="showPage('home')"><span class="ic inline-ic" data-icon="apple"></span>Yuto<span>.</span></span><p>© 2025 <a href="#" onclick="showPage('home')">Yuto</a>. Made with <span class="ic inline-ic" data-icon="heart"></span>&amp; <span class="ic inline-ic" data-icon="coffee"></span>in Japan</p></footer>
 </div>
 
 <!-- ═══════════════════════════════════════════════
@@ -201,7 +197,7 @@
   <div class="page-hero" style="background:radial-gradient(circle 520px at 15% 30%,rgba(255,209,102,.2) 0%,transparent 65%),radial-gradient(circle 420px at 85% 70%,rgba(245,160,190,.18) 0%,transparent 65%),var(--bg)">
     <div class="ph-deco phd-a1"></div><div class="ph-deco phd-a2"></div><div class="ph-deco phd-a3"></div>
     <div class="page-hero-inner">
-      <div class="page-eyebrow">🙋 Profile</div>
+      <div class="page-eyebrow"><span class="ic inline-ic" data-icon="hand"></span>Profile</div>
       <h1 class="page-title">About<span class="dot">.</span></h1>
       <p class="page-desc">iOSアプリを作りながら業務システムを開発する、<br>ちょっと変なエンジニアのプロフィールです。</p>
     </div>
@@ -212,21 +208,21 @@
       <div class="about-layout">
         <div class="rv-l">
           <div class="avatar-card">
-            <span class="avatar-emoji">👨‍💻</span>
+            <span class="avatar-emoji ic" data-icon="devPerson"></span>
             <div class="avatar-name">Yuto</div>
             <div class="avatar-role">iOS Dev &amp; Engineer</div>
             <hr class="avatar-divider"/>
             <div class="avatar-facts">
-              <div class="fact-row"><span class="fact-icon">📍</span><span class="fact-val">Japan</span></div>
-              <div class="fact-row"><span class="fact-icon">💼</span><span class="fact-val">iOS Developer / Systems Engineer</span></div>
-              <div class="fact-row"><span class="fact-icon">🏯</span><span class="fact-val">神社仏閣 &amp; 御朱印収集</span></div>
-              <div class="fact-row"><span class="fact-icon">☕</span><span class="fact-val">カフェイン愛好家（Monster Energy）</span></div>
-              <div class="fact-row"><span class="fact-icon">📖</span><span class="fact-val">基本情報技術者 勉強中</span></div>
+              <div class="fact-row"><span class="fact-icon ic" data-icon="pin"></span><span class="fact-val">Japan</span></div>
+              <div class="fact-row"><span class="fact-icon ic" data-icon="briefcase"></span><span class="fact-val">iOS Developer / Systems Engineer</span></div>
+              <div class="fact-row"><span class="fact-icon ic" data-icon="shrine"></span><span class="fact-val">神社仏閣 &amp; 御朱印収集</span></div>
+              <div class="fact-row"><span class="fact-icon ic" data-icon="coffee"></span><span class="fact-val">カフェイン愛好家（Monster Energy）</span></div>
+              <div class="fact-row"><span class="fact-icon ic" data-icon="book"></span><span class="fact-val">基本情報技術者 勉強中</span></div>
             </div>
             <div class="avatar-badges">
-              <span class="av-badge">🍎 Swift</span><span class="av-badge">⚙️ OutSystems</span>
-              <span class="av-badge">🌿 CloudKit</span><span class="av-badge">🎮 SpriteKit</span>
-              <span class="av-badge">🐍 Python</span><span class="av-badge">📊 JavaScript</span>
+              <span class="av-badge"><span class="ic inline-ic" data-icon="apple"></span>Swift</span><span class="av-badge"><span class="ic inline-ic" data-icon="gear"></span>OutSystems</span>
+              <span class="av-badge"><span class="ic inline-ic" data-icon="cloud"></span>CloudKit</span><span class="av-badge"><span class="ic inline-ic" data-icon="gamepad"></span>SpriteKit</span>
+              <span class="av-badge"><span class="ic inline-ic" data-icon="python"></span>Python</span><span class="av-badge"><span class="ic inline-ic" data-icon="chart"></span>JavaScript</span>
             </div>
           </div>
         </div>
@@ -244,12 +240,12 @@
   <section class="section-wrap" style="background:var(--bg)">
     <div class="inner">
       <p class="eyebrow rv">Journey</p>
-      <h2 class="stitle rv">これまでの歩み <em>📅</em></h2>
+      <h2 class="stitle rv">これまでの歩み <em class="ic em-ic" data-icon="calendar"></em></h2>
       <div class="timeline">
-        <div class="tl-item rv" style="transition-delay:.04s"><div class="tl-dot">🌱</div><div class="tl-content"><div class="tl-year">Start</div><div class="tl-title">プログラミングとの出会い</div><div class="tl-desc">業務の中でコードに触れ、システム開発の面白さに気づく。OutSystems を使った業務システム開発を担当し始める。</div></div></div>
-        <div class="tl-item rv" style="transition-delay:.1s"><div class="tl-dot">🏯</div><div class="tl-content"><div class="tl-year">趣味がきっかけ</div><div class="tl-title">神社仏閣巡り → iOS 開発へ</div><div class="tl-desc">御朱印を記録するアプリが欲しくて Swift を独学で学び始める。SwiftUI の書き心地に感動して、本格的に iOS 開発にのめり込む。</div></div></div>
-        <div class="tl-item rv" style="transition-delay:.16s"><div class="tl-dot">📱</div><div class="tl-content"><div class="tl-year">アプリ開発</div><div class="tl-title">複数アプリを並行開発中</div><div class="tl-desc">カフェイン管理・御朱印収集・ポモドーロなど複数アプリを企画・開発中。SwiftData・CloudKit・SpriteKit を積極的に活用。</div></div></div>
-        <div class="tl-item rv" style="transition-delay:.22s"><div class="tl-dot">📖</div><div class="tl-content"><div class="tl-year">Now</div><div class="tl-title">さらなるスキルアップ</div><div class="tl-desc">基本情報技術者試験の学習に取り組みながら、アプリ開発・業務システム開発を継続中。</div></div></div>
+        <div class="tl-item rv" style="transition-delay:.04s"><div class="tl-dot ic" data-icon="sprout"></div><div class="tl-content"><div class="tl-year">Start</div><div class="tl-title">プログラミングとの出会い</div><div class="tl-desc">業務の中でコードに触れ、システム開発の面白さに気づく。OutSystems を使った業務システム開発を担当し始める。</div></div></div>
+        <div class="tl-item rv" style="transition-delay:.1s"><div class="tl-dot ic" data-icon="shrine"></div><div class="tl-content"><div class="tl-year">趣味がきっかけ</div><div class="tl-title">神社仏閣巡り → iOS 開発へ</div><div class="tl-desc">御朱印を記録するアプリが欲しくて Swift を独学で学び始める。SwiftUI の書き心地に感動して、本格的に iOS 開発にのめり込む。</div></div></div>
+        <div class="tl-item rv" style="transition-delay:.16s"><div class="tl-dot ic" data-icon="phone"></div><div class="tl-content"><div class="tl-year">アプリ開発</div><div class="tl-title">複数アプリを並行開発中</div><div class="tl-desc">カフェイン管理・御朱印収集・ポモドーロなど複数アプリを企画・開発中。SwiftData・CloudKit・SpriteKit を積極的に活用。</div></div></div>
+        <div class="tl-item rv" style="transition-delay:.22s"><div class="tl-dot ic" data-icon="book"></div><div class="tl-content"><div class="tl-year">Now</div><div class="tl-title">さらなるスキルアップ</div><div class="tl-desc">基本情報技術者試験の学習に取り組みながら、アプリ開発・業務システム開発を継続中。</div></div></div>
       </div>
     </div>
   </section>
@@ -257,25 +253,25 @@
   <section class="section-wrap" style="background:var(--bg2)">
     <div class="inner">
       <p class="eyebrow rv">Interests</p>
-      <h2 class="stitle rv">趣味・好きなこと <em>🎨</em></h2>
+      <h2 class="stitle rv">趣味・好きなこと <em class="ic em-ic" data-icon="palette"></em></h2>
       <div class="hobby-grid">
-        <div class="hobby-card rv-pop" style="transition-delay:.04s"><span class="hobby-icon">🏯</span><div class="hobby-name">神社仏閣巡り</div><div class="hobby-desc">全国の神社・お寺を訪れ御朱印を集めるのが好き。アプリ開発のきっかけにもなった趣味</div></div>
-        <div class="hobby-card rv-pop" style="transition-delay:.09s"><span class="hobby-icon">📱</span><div class="hobby-name">iOS アプリ開発</div><div class="hobby-desc">SwiftUI + SwiftData + CloudKit でアプリをゼロから作ること。アイデアをカタチにする瞬間が好き</div></div>
-        <div class="hobby-card rv-pop" style="transition-delay:.14s"><span class="hobby-icon">☕</span><div class="hobby-name">カフェイン管理</div><div class="hobby-desc">Monster Energy が好きすぎて、摂取量を記録するアプリを作ってしまった</div></div>
-        <div class="hobby-card rv-pop" style="transition-delay:.19s"><span class="hobby-icon">🌸</span><div class="hobby-name">ポモドーロ</div><div class="hobby-desc">花が育つポモドーロタイマーアプリを開発中。集中するたびに花が咲く癒やし系</div></div>
-        <div class="hobby-card rv-pop" style="transition-delay:.24s"><span class="hobby-icon">📖</span><div class="hobby-name">IT 資格学習</div><div class="hobby-desc">基本情報技術者試験に向けて勉強中。AI との対話クイズ形式が楽しい</div></div>
-        <div class="hobby-card rv-pop" style="transition-delay:.29s"><span class="hobby-icon">🤖</span><div class="hobby-name">AI 活用</div><div class="hobby-desc">Claude を使った設計・仕様作成 → Claude Code で実装という開発ワークフローを実践中</div></div>
+        <div class="hobby-card rv-pop" style="transition-delay:.04s"><span class="hobby-icon ic" data-icon="shrine"></span><div class="hobby-name">神社仏閣巡り</div><div class="hobby-desc">全国の神社・お寺を訪れ御朱印を集めるのが好き。アプリ開発のきっかけにもなった趣味</div></div>
+        <div class="hobby-card rv-pop" style="transition-delay:.09s"><span class="hobby-icon ic" data-icon="phone"></span><div class="hobby-name">iOS アプリ開発</div><div class="hobby-desc">SwiftUI + SwiftData + CloudKit でアプリをゼロから作ること。アイデアをカタチにする瞬間が好き</div></div>
+        <div class="hobby-card rv-pop" style="transition-delay:.14s"><span class="hobby-icon ic" data-icon="coffee"></span><div class="hobby-name">カフェイン管理</div><div class="hobby-desc">Monster Energy が好きすぎて、摂取量を記録するアプリを作ってしまった</div></div>
+        <div class="hobby-card rv-pop" style="transition-delay:.19s"><span class="hobby-icon ic" data-icon="flower"></span><div class="hobby-name">ポモドーロ</div><div class="hobby-desc">花が育つポモドーロタイマーアプリを開発中。集中するたびに花が咲く癒やし系</div></div>
+        <div class="hobby-card rv-pop" style="transition-delay:.24s"><span class="hobby-icon ic" data-icon="book"></span><div class="hobby-name">IT 資格学習</div><div class="hobby-desc">基本情報技術者試験に向けて勉強中。AI との対話クイズ形式が楽しい</div></div>
+        <div class="hobby-card rv-pop" style="transition-delay:.29s"><span class="hobby-icon ic" data-icon="robot"></span><div class="hobby-name">AI 活用</div><div class="hobby-desc">Claude を使った設計・仕様作成 → Claude Code で実装という開発ワークフローを実践中</div></div>
       </div>
     </div>
   </section>
 
   <div class="cta-section cta-orange rv">
-    <span class="cta-emoji">💬</span>
+    <span class="cta-emoji ic" data-icon="chat"></span>
     <div class="cta-title">一緒に何か作りませんか？</div>
     <p class="cta-desc">お仕事のご依頼・コラボ・ちょっとした質問、なんでもどうぞ！</p>
-    <div class="cta-btns"><button onclick="showPage('contact')" class="btn btn-primary">✉️ お問い合わせ</button><button onclick="showPage('apps')" class="btn btn-outline">📱 アプリを見る</button></div>
+    <div class="cta-btns"><button onclick="showPage('contact')" class="btn btn-primary"><span class="ic inline-ic" data-icon="mail"></span>お問い合わせ</button><button onclick="showPage('apps')" class="btn btn-outline"><span class="ic inline-ic" data-icon="phone"></span>アプリを見る</button></div>
   </div>
-  <footer><span class="footer-logo" onclick="showPage('home')">🍎 Yuto<span>.</span></span><p>© 2025 <a href="#" onclick="showPage('home')">Yuto</a>. Made with ❤️ &amp; ☕ in Japan</p></footer>
+  <footer><span class="footer-logo" onclick="showPage('home')"><span class="ic inline-ic" data-icon="apple"></span>Yuto<span>.</span></span><p>© 2025 <a href="#" onclick="showPage('home')">Yuto</a>. Made with <span class="ic inline-ic" data-icon="heart"></span>&amp; <span class="ic inline-ic" data-icon="coffee"></span>in Japan</p></footer>
 </div>
 
 <!-- ═══════════════════════════════════════════════
@@ -287,7 +283,7 @@
     <div class="ph-deco phd-a2" style="background:rgba(133,199,242,.4)"></div>
     <div class="ph-deco phd-a3" style="background:rgba(184,169,240,.35)"></div>
     <div class="page-hero-inner">
-      <div class="page-eyebrow">✨ Tech Stack</div>
+      <div class="page-eyebrow"><span class="ic inline-ic" data-icon="sparkle"></span>Tech Stack</div>
       <h1 class="page-title">Skills<span class="dot">.</span></h1>
       <p class="page-desc">使える技術・勉強中のことをまとめました。</p>
     </div>
@@ -296,14 +292,14 @@
   <section class="section-wrap" style="background:var(--bg2)">
     <div class="inner">
       <p class="eyebrow rv">Core Skills</p>
-      <h2 class="stitle rv">メインスキル <em>🍎</em></h2>
+      <h2 class="stitle rv">メインスキル <em class="ic em-ic" data-icon="apple"></em></h2>
       <div class="skills-grid" style="grid-template-columns:repeat(auto-fill,minmax(300px,1fr))">
-        <div class="skill-card-lg sc-peach rv" style="transition-delay:.04s"><div class="skill-header"><div class="skill-icon-box">🍎</div><div><div class="skill-name">SwiftUI</div><span class="skill-level-badge lv-advanced">Advanced</span></div></div><div class="skill-desc">SwiftData・CloudKit・Combine と組み合わせた本格iOSアプリ開発。個人アプリを複数リリース予定で実践的に活用中。</div><div class="skill-tags"><span class="skill-tag">SwiftData</span><span class="skill-tag">CloudKit</span><span class="skill-tag">Combine</span><span class="skill-tag">MVVM</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="80" style="background:linear-gradient(90deg,#FF8C69,#FFD166)"></div></div><div class="skill-footer-row"><span class="skill-pct">80%</span><span class="skill-years">~2年</span></div></div>
-        <div class="skill-card-lg sc-mint rv" style="transition-delay:.08s"><div class="skill-header"><div class="skill-icon-box">⚙️</div><div><div class="skill-name">OutSystems</div><span class="skill-level-badge lv-advanced">Advanced</span></div></div><div class="skill-desc">業務システムの設計・実装・テストまで幅広く担当。TAPS システムの開発や設計書標準化に携わる。</div><div class="skill-tags"><span class="skill-tag">TAPS</span><span class="skill-tag">設計書</span><span class="skill-tag">SpreadJS</span><span class="skill-tag">業務ロジック</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="75" style="background:linear-gradient(90deg,#72D9B8,#85C7F2)"></div></div><div class="skill-footer-row"><span class="skill-pct">75%</span><span class="skill-years">~3年</span></div></div>
-        <div class="skill-card-lg sc-yellow rv" style="transition-delay:.12s"><div class="skill-header"><div class="skill-icon-box">📊</div><div><div class="skill-name">JavaScript</div><span class="skill-level-badge lv-intermediate">Intermediate</span></div></div><div class="skill-desc">SpreadJS を使ったフロントエンド実装。チェックボックス・行コピー・合計計算など実務的なスクリプトを多数作成。</div><div class="skill-tags"><span class="skill-tag">SpreadJS</span><span class="skill-tag">DOM</span><span class="skill-tag">ES6+</span><span class="skill-tag">非同期処理</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="65" style="background:linear-gradient(90deg,#FFD166,#FF8C69)"></div></div><div class="skill-footer-row"><span class="skill-pct">65%</span><span class="skill-years">~2年</span></div></div>
-        <div class="skill-card-lg sc-lav rv" style="transition-delay:.16s"><div class="skill-header"><div class="skill-icon-box">🎮</div><div><div class="skill-name">SpriteKit</div><span class="skill-level-badge lv-intermediate">Intermediate</span></div></div><div class="skill-desc">2Dゲームエンジン。Flower Pomo アプリで花が育つアニメーションを実装中。</div><div class="skill-tags"><span class="skill-tag">Physics</span><span class="skill-tag">Actions</span><span class="skill-tag">Particles</span><span class="skill-tag">Nodes</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="55" style="background:linear-gradient(90deg,#B8A9F0,#F5A0BE)"></div></div><div class="skill-footer-row"><span class="skill-pct">55%</span><span class="skill-years">~1年</span></div></div>
-        <div class="skill-card-lg sc-sky rv" style="transition-delay:.2s"><div class="skill-header"><div class="skill-icon-box">🐍</div><div><div class="skill-name">Python</div><span class="skill-level-badge lv-intermediate">Intermediate</span></div></div><div class="skill-desc">スクリプト・自動化・画像処理（OpenCV）・PDF生成（ReportLab）など業務効率化に活用。</div><div class="skill-tags"><span class="skill-tag">OpenCV</span><span class="skill-tag">ReportLab</span><span class="skill-tag">自動化</span><span class="skill-tag">スクレイピング</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="55" style="background:linear-gradient(90deg,#85C7F2,#72D9B8)"></div></div><div class="skill-footer-row"><span class="skill-pct">55%</span><span class="skill-years">~2年</span></div></div>
-        <div class="skill-card-lg sc-pink rv" style="transition-delay:.24s"><div class="skill-header"><div class="skill-icon-box">☁️</div><div><div class="skill-name">CloudKit</div><span class="skill-level-badge lv-intermediate">Intermediate</span></div></div><div class="skill-desc">iOSアプリのiCloud同期・データ永続化。SwiftData との組み合わせでシームレスなデータ管理を実現。</div><div class="skill-tags"><span class="skill-tag">iCloud</span><span class="skill-tag">Sync</span><span class="skill-tag">SwiftData</span><span class="skill-tag">Public DB</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="50" style="background:linear-gradient(90deg,#F5A0BE,#B8A9F0)"></div></div><div class="skill-footer-row"><span class="skill-pct">50%</span><span class="skill-years">~1年</span></div></div>
+        <div class="skill-card-lg sc-peach rv" style="transition-delay:.04s"><div class="skill-header"><div class="skill-icon-box ic" data-icon="apple"></div><div><div class="skill-name">SwiftUI</div><span class="skill-level-badge lv-advanced">Advanced</span></div></div><div class="skill-desc">SwiftData・CloudKit・Combine と組み合わせた本格iOSアプリ開発。個人アプリを複数リリース予定で実践的に活用中。</div><div class="skill-tags"><span class="skill-tag">SwiftData</span><span class="skill-tag">CloudKit</span><span class="skill-tag">Combine</span><span class="skill-tag">MVVM</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="80" style="background:linear-gradient(90deg,#FF8C69,#FFD166)"></div></div><div class="skill-footer-row"><span class="skill-pct">80%</span><span class="skill-years">~2年</span></div></div>
+        <div class="skill-card-lg sc-mint rv" style="transition-delay:.08s"><div class="skill-header"><div class="skill-icon-box ic" data-icon="gear"></div><div><div class="skill-name">OutSystems</div><span class="skill-level-badge lv-advanced">Advanced</span></div></div><div class="skill-desc">業務システムの設計・実装・テストまで幅広く担当。TAPS システムの開発や設計書標準化に携わる。</div><div class="skill-tags"><span class="skill-tag">TAPS</span><span class="skill-tag">設計書</span><span class="skill-tag">SpreadJS</span><span class="skill-tag">業務ロジック</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="75" style="background:linear-gradient(90deg,#72D9B8,#85C7F2)"></div></div><div class="skill-footer-row"><span class="skill-pct">75%</span><span class="skill-years">~3年</span></div></div>
+        <div class="skill-card-lg sc-yellow rv" style="transition-delay:.12s"><div class="skill-header"><div class="skill-icon-box ic" data-icon="chart"></div><div><div class="skill-name">JavaScript</div><span class="skill-level-badge lv-intermediate">Intermediate</span></div></div><div class="skill-desc">SpreadJS を使ったフロントエンド実装。チェックボックス・行コピー・合計計算など実務的なスクリプトを多数作成。</div><div class="skill-tags"><span class="skill-tag">SpreadJS</span><span class="skill-tag">DOM</span><span class="skill-tag">ES6+</span><span class="skill-tag">非同期処理</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="65" style="background:linear-gradient(90deg,#FFD166,#FF8C69)"></div></div><div class="skill-footer-row"><span class="skill-pct">65%</span><span class="skill-years">~2年</span></div></div>
+        <div class="skill-card-lg sc-lav rv" style="transition-delay:.16s"><div class="skill-header"><div class="skill-icon-box ic" data-icon="gamepad"></div><div><div class="skill-name">SpriteKit</div><span class="skill-level-badge lv-intermediate">Intermediate</span></div></div><div class="skill-desc">2Dゲームエンジン。Flower Pomo アプリで花が育つアニメーションを実装中。</div><div class="skill-tags"><span class="skill-tag">Physics</span><span class="skill-tag">Actions</span><span class="skill-tag">Particles</span><span class="skill-tag">Nodes</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="55" style="background:linear-gradient(90deg,#B8A9F0,#F5A0BE)"></div></div><div class="skill-footer-row"><span class="skill-pct">55%</span><span class="skill-years">~1年</span></div></div>
+        <div class="skill-card-lg sc-sky rv" style="transition-delay:.2s"><div class="skill-header"><div class="skill-icon-box ic" data-icon="python"></div><div><div class="skill-name">Python</div><span class="skill-level-badge lv-intermediate">Intermediate</span></div></div><div class="skill-desc">スクリプト・自動化・画像処理（OpenCV）・PDF生成（ReportLab）など業務効率化に活用。</div><div class="skill-tags"><span class="skill-tag">OpenCV</span><span class="skill-tag">ReportLab</span><span class="skill-tag">自動化</span><span class="skill-tag">スクレイピング</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="55" style="background:linear-gradient(90deg,#85C7F2,#72D9B8)"></div></div><div class="skill-footer-row"><span class="skill-pct">55%</span><span class="skill-years">~2年</span></div></div>
+        <div class="skill-card-lg sc-pink rv" style="transition-delay:.24s"><div class="skill-header"><div class="skill-icon-box ic" data-icon="cloud"></div><div><div class="skill-name">CloudKit</div><span class="skill-level-badge lv-intermediate">Intermediate</span></div></div><div class="skill-desc">iOSアプリのiCloud同期・データ永続化。SwiftData との組み合わせでシームレスなデータ管理を実現。</div><div class="skill-tags"><span class="skill-tag">iCloud</span><span class="skill-tag">Sync</span><span class="skill-tag">SwiftData</span><span class="skill-tag">Public DB</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-width="50" style="background:linear-gradient(90deg,#F5A0BE,#B8A9F0)"></div></div><div class="skill-footer-row"><span class="skill-pct">50%</span><span class="skill-years">~1年</span></div></div>
       </div>
     </div>
   </section>
@@ -311,16 +307,16 @@
   <section class="section-wrap" style="background:var(--bg)">
     <div class="inner">
       <p class="eyebrow rv">Environment</p>
-      <h2 class="stitle rv">使っているツール <em>🛠️</em></h2>
+      <h2 class="stitle rv">使っているツール <em class="ic em-ic" data-icon="wrench"></em></h2>
       <div class="tools-grid">
-        <div class="tool-chip rv-pop" style="transition-delay:.03s"><span class="tool-icon">💻</span><div class="tool-name">Xcode</div></div>
-        <div class="tool-chip rv-pop" style="transition-delay:.06s"><span class="tool-icon">🐙</span><div class="tool-name">GitHub</div></div>
-        <div class="tool-chip rv-pop" style="transition-delay:.09s"><span class="tool-icon">🤖</span><div class="tool-name">Claude</div></div>
-        <div class="tool-chip rv-pop" style="transition-delay:.12s"><span class="tool-icon">📝</span><div class="tool-name">Notion</div></div>
-        <div class="tool-chip rv-pop" style="transition-delay:.15s"><span class="tool-icon">🎨</span><div class="tool-name">Figma</div></div>
-        <div class="tool-chip rv-pop" style="transition-delay:.18s"><span class="tool-icon">📊</span><div class="tool-name">Excel</div></div>
-        <div class="tool-chip rv-pop" style="transition-delay:.21s"><span class="tool-icon">🖥️</span><div class="tool-name">VSCode</div></div>
-        <div class="tool-chip rv-pop" style="transition-delay:.24s"><span class="tool-icon">📱</span><div class="tool-name">TestFlight</div></div>
+        <div class="tool-chip rv-pop" style="transition-delay:.03s"><span class="tool-icon ic" data-icon="laptop"></span><div class="tool-name">Xcode</div></div>
+        <div class="tool-chip rv-pop" style="transition-delay:.06s"><span class="tool-icon ic" data-icon="github"></span><div class="tool-name">GitHub</div></div>
+        <div class="tool-chip rv-pop" style="transition-delay:.09s"><span class="tool-icon ic" data-icon="robot"></span><div class="tool-name">Claude</div></div>
+        <div class="tool-chip rv-pop" style="transition-delay:.12s"><span class="tool-icon ic" data-icon="pencil"></span><div class="tool-name">Notion</div></div>
+        <div class="tool-chip rv-pop" style="transition-delay:.15s"><span class="tool-icon ic" data-icon="palette"></span><div class="tool-name">Figma</div></div>
+        <div class="tool-chip rv-pop" style="transition-delay:.18s"><span class="tool-icon ic" data-icon="chart"></span><div class="tool-name">Excel</div></div>
+        <div class="tool-chip rv-pop" style="transition-delay:.21s"><span class="tool-icon ic" data-icon="desktop"></span><div class="tool-name">VSCode</div></div>
+        <div class="tool-chip rv-pop" style="transition-delay:.24s"><span class="tool-icon ic" data-icon="phone"></span><div class="tool-name">TestFlight</div></div>
       </div>
     </div>
   </section>
@@ -328,23 +324,23 @@
   <section class="section-wrap" style="background:var(--bg2)">
     <div class="inner">
       <p class="eyebrow rv">Currently Learning</p>
-      <h2 class="stitle rv">いま勉強していること <em>📖</em></h2>
+      <h2 class="stitle rv">いま勉強していること <em class="ic em-ic" data-icon="book"></em></h2>
       <div class="learning-grid">
-        <div class="learn-card rv" style="transition-delay:.04s"><div class="learn-header"><span class="learn-icon">📖</span><div><div class="learn-title">基本情報技術者試験</div><div class="learn-sub">国家資格</div></div></div><div class="learn-desc">AIとの対話クイズ形式で学習中。ハードウェア・ネットワーク・DB・セキュリティを横断的に勉強。</div><div class="learn-progress"><div class="lp-label">進捗</div><div class="lp-bar"><div class="lp-fill" data-width="55"></div></div></div></div>
-        <div class="learn-card rv" style="transition-delay:.09s"><div class="learn-header"><span class="learn-icon">🎭</span><div><div class="learn-title">SceneKit / 3D</div><div class="learn-sub">iOS Framework</div></div></div><div class="learn-desc">Flower Pomo アプリの 3D 花アニメーション実装のため SceneKit を学習中。</div><div class="learn-progress"><div class="lp-label">進捗</div><div class="lp-bar"><div class="lp-fill" data-width="30" style="background:linear-gradient(90deg,var(--lav),var(--pink))"></div></div></div></div>
-        <div class="learn-card rv" style="transition-delay:.14s"><div class="learn-header"><span class="learn-icon">💰</span><div><div class="learn-title">App Store 収益化</div><div class="learn-sub">ASO / AdMob</div></div></div><div class="learn-desc">Apple Search Ads・AdMob 広告統合・App Store 最適化（ASO）などを研究中。</div><div class="learn-progress"><div class="lp-label">進捗</div><div class="lp-bar"><div class="lp-fill" data-width="40" style="background:linear-gradient(90deg,var(--mint),var(--sky))"></div></div></div></div>
-        <div class="learn-card rv" style="transition-delay:.19s"><div class="learn-header"><span class="learn-icon">🌐</span><div><div class="learn-title">Web 開発</div><div class="learn-sub">HTML / CSS / JS</div></div></div><div class="learn-desc">このポートフォリオサイトを通じて HTML・CSS・JavaScript を実践的に学習中！</div><div class="learn-progress"><div class="lp-label">進捗</div><div class="lp-bar"><div class="lp-fill" data-width="45" style="background:linear-gradient(90deg,var(--yellow),var(--peach))"></div></div></div></div>
+        <div class="learn-card rv" style="transition-delay:.04s"><div class="learn-header"><span class="learn-icon ic" data-icon="book"></span><div><div class="learn-title">基本情報技術者試験</div><div class="learn-sub">国家資格</div></div></div><div class="learn-desc">AIとの対話クイズ形式で学習中。ハードウェア・ネットワーク・DB・セキュリティを横断的に勉強。</div><div class="learn-progress"><div class="lp-label">進捗</div><div class="lp-bar"><div class="lp-fill" data-width="55"></div></div></div></div>
+        <div class="learn-card rv" style="transition-delay:.09s"><div class="learn-header"><span class="learn-icon ic" data-icon="cube"></span><div><div class="learn-title">SceneKit / 3D</div><div class="learn-sub">iOS Framework</div></div></div><div class="learn-desc">Flower Pomo アプリの 3D 花アニメーション実装のため SceneKit を学習中。</div><div class="learn-progress"><div class="lp-label">進捗</div><div class="lp-bar"><div class="lp-fill" data-width="30" style="background:linear-gradient(90deg,var(--lav),var(--pink))"></div></div></div></div>
+        <div class="learn-card rv" style="transition-delay:.14s"><div class="learn-header"><span class="learn-icon ic" data-icon="coin"></span><div><div class="learn-title">App Store 収益化</div><div class="learn-sub">ASO / AdMob</div></div></div><div class="learn-desc">Apple Search Ads・AdMob 広告統合・App Store 最適化（ASO）などを研究中。</div><div class="learn-progress"><div class="lp-label">進捗</div><div class="lp-bar"><div class="lp-fill" data-width="40" style="background:linear-gradient(90deg,var(--mint),var(--sky))"></div></div></div></div>
+        <div class="learn-card rv" style="transition-delay:.19s"><div class="learn-header"><span class="learn-icon ic" data-icon="globe"></span><div><div class="learn-title">Web 開発</div><div class="learn-sub">HTML / CSS / JS</div></div></div><div class="learn-desc">このポートフォリオサイトを通じて HTML・CSS・JavaScript を実践的に学習中！</div><div class="learn-progress"><div class="lp-label">進捗</div><div class="lp-bar"><div class="lp-fill" data-width="45" style="background:linear-gradient(90deg,var(--yellow),var(--peach))"></div></div></div></div>
       </div>
     </div>
   </section>
 
   <div class="cta-section cta-green rv">
-    <span class="cta-emoji">🚀</span>
+    <span class="cta-emoji ic" data-icon="rocket"></span>
     <div class="cta-title">作ったアプリも見てください！</div>
     <p class="cta-desc">スキルを活かして開発したアプリたちを紹介しています。</p>
-    <div class="cta-btns"><button onclick="showPage('apps')" class="btn btn-primary">📱 アプリを見る</button><button onclick="showPage('contact')" class="btn btn-outline">✉️ お問い合わせ</button></div>
+    <div class="cta-btns"><button onclick="showPage('apps')" class="btn btn-primary"><span class="ic inline-ic" data-icon="phone"></span>アプリを見る</button><button onclick="showPage('contact')" class="btn btn-outline"><span class="ic inline-ic" data-icon="mail"></span>お問い合わせ</button></div>
   </div>
-  <footer><span class="footer-logo" onclick="showPage('home')">🍎 Yuto<span>.</span></span><p>© 2025 <a href="#" onclick="showPage('home')">Yuto</a>. Made with ❤️ &amp; ☕ in Japan</p></footer>
+  <footer><span class="footer-logo" onclick="showPage('home')"><span class="ic inline-ic" data-icon="apple"></span>Yuto<span>.</span></span><p>© 2025 <a href="#" onclick="showPage('home')">Yuto</a>. Made with <span class="ic inline-ic" data-icon="heart"></span>&amp; <span class="ic inline-ic" data-icon="coffee"></span>in Japan</p></footer>
 </div>
 
 <!-- ═══════════════════════════════════════════════
@@ -356,7 +352,7 @@
     <div class="ph-deco phd-a2" style="background:rgba(255,140,105,.35)"></div>
     <div class="ph-deco phd-a3" style="background:rgba(184,169,240,.35)"></div>
     <div class="page-hero-inner">
-      <div class="page-eyebrow">📱 Works</div>
+      <div class="page-eyebrow"><span class="ic inline-ic" data-icon="phone"></span>Works</div>
       <h1 class="page-title">Apps<span class="dot">.</span></h1>
       <p class="page-desc">SwiftUI で作っているアプリたちを紹介します。</p>
     </div>
@@ -365,53 +361,40 @@
   <section class="section-wrap" style="background:var(--bg2)">
     <div class="inner">
       <p class="eyebrow rv">All Works</p>
-      <h2 class="stitle rv">アプリ一覧 <em>🚀</em></h2>
+      <h2 class="stitle rv">アプリ一覧 <em class="ic em-ic" data-icon="rocket"></em></h2>
 
       <div class="app-feature rv-l">
-        <div class="app-visual rv-l"><div class="app-visual-bg" style="background:linear-gradient(135deg,#1a1a2e,#e63946)"></div><span class="app-visual-emoji">⚡</span><span class="app-status-badge status-dev">開発中</span></div>
+        <div class="app-visual rv-l"><div class="app-visual-bg" style="background:linear-gradient(135deg,#0F1F0C,#8CF208)"></div><span class="app-visual-emoji ic" data-icon="coffee"></span><span class="app-status-badge status-released">リリース済</span></div>
         <div class="rv-r" style="padding-top:8px">
-          <span class="app-tag-pill" style="background:rgba(255,140,105,.12);color:var(--peach)">🏃 Health &amp; Fitness</span>
-          <div class="app-info-name">App Name <em>01</em></div>
-          <div class="app-info-desc">アプリの説明をここに追加してください。どんな課題を解決するか、ユーザーへの価値・コンセプトを書きましょう。</div>
-          <div class="app-features-list"><div class="feat-item"><span class="feat-icon">✅</span><span>機能1 — 説明をここに書く</span></div><div class="feat-item"><span class="feat-icon">✅</span><span>機能2 — 説明をここに書く</span></div><div class="feat-item"><span class="feat-icon">✅</span><span>機能3 — 説明をここに書く</span></div></div>
-          <div class="app-stack"><span class="stack-tag">SwiftUI</span><span class="stack-tag">SwiftData</span><span class="stack-tag">CloudKit</span></div>
-          <div class="app-btns"><a href="#" class="btn btn-primary">📱 App Store</a><a href="https://github.com/" class="btn btn-outline">🐙 GitHub</a></div>
+          <span class="app-tag-pill" style="background:rgba(114,217,184,.15);color:#2a9d7a"><span class="ic inline-ic" data-icon="coffee"></span>Health &amp; Fitness</span>
+          <div class="app-info-name">Caf<em>Log</em></div>
+          <div class="app-info-desc">コーヒー1杯、いま体にどれくらい残ってる？ カフェインの摂取量と代謝残量をリアルタイムで可視化する iOS アプリ。半減期シミュレーションで就寝時刻までの推移を自動チェックし、寝つきに影響する一杯を事前に教えてくれます。</div>
+          <div class="app-features-list"><div class="feat-item"><span class="feat-icon ic" data-icon="check"></span><span>ワンタップ記録 — Monster / Red Bull / ZONe など 14 種類のプリセットで即時記録</span></div><div class="feat-item"><span class="feat-icon ic" data-icon="check"></span><span>代謝シミュレーション — 半減期 5.5h ベースで残量を Charts でリアルタイム可視化</span></div><div class="feat-item"><span class="feat-icon ic" data-icon="check"></span><span>睡眠影響アラート — 就寝時刻までのカフェイン推移を自動チェック</span></div><div class="feat-item"><span class="feat-icon ic" data-icon="check"></span><span>ホーム画面ウィジェット — 残量グラフ・クイック記録・ロック画面対応</span></div></div>
+          <div class="app-stack"><span class="stack-tag">SwiftUI</span><span class="stack-tag">SwiftData</span><span class="stack-tag">CloudKit</span><span class="stack-tag">WidgetKit</span><span class="stack-tag">HealthKit</span><span class="stack-tag">StoreKit 2</span><span class="stack-tag">Charts</span></div>
+          <div class="app-btns"><a href="https://apps.apple.com/us/app/caflog/id6760961086" target="_blank" rel="noopener" class="btn btn-primary"><span class="ic inline-ic" data-icon="phone"></span>App Store</a></div>
         </div>
       </div>
 
       <div class="app-feature reverse rv-r">
-        <div class="app-visual rv-r"><div class="app-visual-bg" style="background:linear-gradient(135deg,#2d0057,#8b1a4a)"></div><span class="app-visual-emoji">🏯</span><span class="app-status-badge status-dev">開発中</span></div>
+        <div class="app-visual rv-r"><div class="app-visual-bg" style="background:linear-gradient(135deg,#1a1a2e,#4a4a8e)"></div><span class="app-visual-emoji ic" data-icon="clipboard"></span><span class="app-status-badge status-coming">Coming Soon</span></div>
         <div class="rv-l" style="padding-top:8px">
-          <span class="app-tag-pill" style="background:rgba(184,169,240,.15);color:#7c5cbf">🌸 Lifestyle</span>
-          <div class="app-info-name">App Name <em>02</em></div>
-          <div class="app-info-desc">アプリの説明をここに追加してください。どんな課題を解決するか、ユーザーへの価値・コンセプトを書きましょう。</div>
-          <div class="app-features-list"><div class="feat-item"><span class="feat-icon">✅</span><span>機能1 — 説明をここに書く</span></div><div class="feat-item"><span class="feat-icon">✅</span><span>機能2 — 説明をここに書く</span></div><div class="feat-item"><span class="feat-icon">✅</span><span>機能3 — 説明をここに書く</span></div></div>
-          <div class="app-stack"><span class="stack-tag">SwiftUI</span><span class="stack-tag">SwiftData</span><span class="stack-tag">MapKit</span><span class="stack-tag">CloudKit</span></div>
-          <div class="app-btns"><a href="#" class="btn btn-disabled">📱 準備中</a><a href="https://github.com/" class="btn btn-outline">🐙 GitHub</a></div>
-        </div>
-      </div>
-
-      <div class="app-feature rv-l">
-        <div class="app-visual rv-l"><div class="app-visual-bg" style="background:linear-gradient(135deg,#064e3b,#065f46)"></div><span class="app-visual-emoji">🌸</span><span class="app-status-badge status-planned">企画中</span></div>
-        <div class="rv-r" style="padding-top:8px">
-          <span class="app-tag-pill" style="background:rgba(114,217,184,.15);color:#2a9d7a">🎯 Productivity</span>
-          <div class="app-info-name">App Name <em>03</em></div>
-          <div class="app-info-desc">アプリの説明をここに追加してください。どんな課題を解決するか、ユーザーへの価値・コンセプトを書きましょう。</div>
-          <div class="app-features-list"><div class="feat-item"><span class="feat-icon">✅</span><span>機能1 — 説明をここに書く</span></div><div class="feat-item"><span class="feat-icon">✅</span><span>機能2 — 説明をここに書く</span></div><div class="feat-item"><span class="feat-icon">🔜</span><span>機能3 — 開発予定</span></div></div>
-          <div class="app-stack"><span class="stack-tag">SwiftUI</span><span class="stack-tag">SpriteKit</span><span class="stack-tag">CloudKit</span></div>
-          <div class="app-btns"><a href="#" class="btn btn-disabled">📱 準備中</a><a href="https://github.com/" class="btn btn-outline">🐙 GitHub</a></div>
+          <span class="app-tag-pill" style="background:rgba(133,199,242,.15);color:#2d6ba3"><span class="ic inline-ic" data-icon="clipboard"></span>Productivity</span>
+          <div class="app-info-name">Sub<em>Log</em></div>
+          <div class="app-info-desc">サブスクリプションを棚卸ししよう。使っていないサブスクの気づきと、年間コストをひと目で把握できる iOS アプリ。現在 App Store 審査準備中、近日公開予定。</div>
+          <div class="app-features-list"><div class="feat-item"><span class="feat-icon ic" data-icon="clock"></span><span>詳細は公開時にお知らせします</span></div></div>
+          <div class="app-btns"><a href="#" class="btn btn-disabled"><span class="ic inline-ic" data-icon="clock"></span>近日公開</a></div>
         </div>
       </div>
     </div>
   </section>
 
   <div class="cta-section cta-warm rv">
-    <span class="cta-emoji">💬</span>
+    <span class="cta-emoji ic" data-icon="chat"></span>
     <div class="cta-title">気になるアプリがあれば！</div>
-    <p class="cta-desc">フィードバック・ご意見・コラボのご相談などお気軽にどうぞ 😊</p>
-    <div class="cta-btns"><button onclick="showPage('contact')" class="btn btn-primary">✉️ お問い合わせ</button><button onclick="showPage('skills')" class="btn btn-outline">✨ スキルを見る</button></div>
+    <p class="cta-desc">フィードバック・ご意見・コラボのご相談などお気軽にどうぞ。</p>
+    <div class="cta-btns"><button onclick="showPage('contact')" class="btn btn-primary"><span class="ic inline-ic" data-icon="mail"></span>お問い合わせ</button><button onclick="showPage('skills')" class="btn btn-outline"><span class="ic inline-ic" data-icon="sparkle"></span>スキルを見る</button></div>
   </div>
-  <footer><span class="footer-logo" onclick="showPage('home')">🍎 Yuto<span>.</span></span><p>© 2025 <a href="#" onclick="showPage('home')">Yuto</a>. Made with ❤️ &amp; ☕ in Japan</p></footer>
+  <footer><span class="footer-logo" onclick="showPage('home')"><span class="ic inline-ic" data-icon="apple"></span>Yuto<span>.</span></span><p>© 2025 <a href="#" onclick="showPage('home')">Yuto</a>. Made with <span class="ic inline-ic" data-icon="heart"></span>&amp; <span class="ic inline-ic" data-icon="coffee"></span>in Japan</p></footer>
 </div>
 
 <!-- ═══════════════════════════════════════════════
@@ -423,7 +406,7 @@
     <div class="ph-deco phd-a2" style="background:rgba(133,199,242,.4)"></div>
     <div class="ph-deco phd-a3" style="background:rgba(255,209,102,.35)"></div>
     <div class="page-hero-inner">
-      <div class="page-eyebrow">✉️ Get in Touch</div>
+      <div class="page-eyebrow"><span class="ic inline-ic" data-icon="mail"></span>Get in Touch</div>
       <h1 class="page-title">Contact<span class="dot">.</span></h1>
       <p class="page-desc">お仕事・コラボ・ちょっとした質問、なんでもお気軽にどうぞ！</p>
     </div>
@@ -434,31 +417,31 @@
       <div class="contact-grid">
         <div class="rv-l">
           <div class="contact-info-card">
-            <div class="cic-title">👋 お気軽にどうぞ！</div>
+            <div class="cic-title"><span class="ic inline-ic" data-icon="wave"></span>お気軽にどうぞ！</div>
             <div class="cic-desc">お仕事のご依頼・アプリのフィードバック・コラボのご提案・ちょっとした質問など、どんなことでも歓迎です。</div>
             <div class="response-badge"><span class="rdot"></span>通常 2〜3営業日以内に返信します</div>
             <div class="contact-links">
-              <a href="https://github.com/" target="_blank" class="c-link"><span class="c-icon">🐙</span><span>GitHub</span></a>
-              <a href="/cdn-cgi/l/email-protection#146d7b6166547179757d783a777b79" class="c-link"><span class="c-icon">✉️</span><span><span class="__cf_email__" data-cfemail="641d0b1116240109050d084a070b09">[email&#160;protected]</span></span></a>
-              <a href="https://apps.apple.com/" target="_blank" class="c-link"><span class="c-icon">📱</span><span>App Store</span></a>
+              <a href="https://github.com/yuto1201" target="_blank" rel="noopener" class="c-link"><span class="c-icon ic" data-icon="github"></span><span>GitHub</span></a>
+              <a href="/cdn-cgi/l/email-protection#146d7b6166547179757d783a777b79" class="c-link"><span class="c-icon ic" data-icon="mail"></span><span><span class="__cf_email__" data-cfemail="641d0b1116240109050d084a070b09">[email&#160;protected]</span></span></a>
+              <a href="https://apps.apple.com/" target="_blank" class="c-link"><span class="c-icon ic" data-icon="phone"></span><span>App Store</span></a>
             </div>
           </div>
         </div>
         <div class="rv-r">
           <div class="form-card">
             <div id="formContent">
-              <div class="form-row-full"><label>👤 お名前</label><input type="text" placeholder="山田 太郎"/></div>
-              <div class="form-row-full"><label>✉️ メールアドレス</label><input type="email" id="femail" placeholder="hello@example.com"/></div>
-              <div class="form-row-full"><label>📋 お問い合わせ種別</label>
-                <select><option value="">選択してください</option><option>💼 お仕事のご依頼</option><option>🤝 コラボ・相談</option><option>💬 アプリへのフィードバック</option><option>❓ ちょっとした質問</option><option>📝 その他</option></select>
+              <div class="form-row-full"><label><span class="ic inline-ic" data-icon="user"></span>お名前</label><input type="text" placeholder="山田 太郎"/></div>
+              <div class="form-row-full"><label><span class="ic inline-ic" data-icon="mail"></span>メールアドレス</label><input type="email" id="femail" placeholder="hello@example.com"/></div>
+              <div class="form-row-full"><label><span class="ic inline-ic" data-icon="clipboard"></span>お問い合わせ種別</label>
+                <select><option value="">選択してください</option><option>お仕事のご依頼</option><option>コラボ・相談</option><option>アプリへのフィードバック</option><option>ちょっとした質問</option><option>その他</option></select>
               </div>
-              <div class="form-row-full"><label>💬 メッセージ</label><textarea rows="5" placeholder="メッセージを入力してください 😊"></textarea></div>
-              <button class="btn-send-full" onclick="handleContactSend(this)">送信する ✈️</button>
+              <div class="form-row-full"><label><span class="ic inline-ic" data-icon="chat"></span>メッセージ</label><textarea rows="5" placeholder="メッセージを入力してください"></textarea></div>
+              <button class="btn-send-full" onclick="handleContactSend(this)">送信する<span class="ic inline-ic" data-icon="paperPlane"></span></button>
             </div>
             <div class="send-success" id="successMsg">
-              <span class="success-emoji" style="animation:avFloat 3s ease-in-out infinite">🎉</span>
+              <span class="success-emoji ic" data-icon="party" style="animation:avFloat 3s ease-in-out infinite"></span>
               <div class="success-title">送信できました！</div>
-              <div class="success-desc">ご連絡ありがとうございます。<br>2〜3営業日以内にお返しします 😊</div>
+              <div class="success-desc">ご連絡ありがとうございます。<br>2〜3営業日以内にお返しします。</div>
             </div>
           </div>
         </div>
@@ -469,19 +452,20 @@
   <section class="section-wrap" style="background:var(--bg)">
     <div class="inner">
       <p class="eyebrow rv">FAQ</p>
-      <h2 class="stitle rv">よくある質問 <em>❓</em></h2>
+      <h2 class="stitle rv">よくある質問 <em class="ic em-ic" data-icon="question"></em></h2>
       <div class="faq-list">
         <div class="faq-item rv"><div class="faq-q" onclick="toggleFaq(this)"><span>お仕事の依頼はできますか？</span><span class="faq-icon">＋</span></div><div class="faq-a">はい、承っています！iOS アプリ開発・OutSystems を使った業務システム開発・JavaScript フロントエンド実装などが得意です。まずはお気軽にご相談ください。</div></div>
         <div class="faq-item rv" style="transition-delay:.05s"><div class="faq-q" onclick="toggleFaq(this)"><span>返信にはどのくらいかかりますか？</span><span class="faq-icon">＋</span></div><div class="faq-a">通常 2〜3 営業日以内にご返信しています。お急ぎの場合はその旨をメッセージに記載いただければ、できる限り優先して対応します。</div></div>
-        <div class="faq-item rv" style="transition-delay:.1s"><div class="faq-q" onclick="toggleFaq(this)"><span>アプリのフィードバックも歓迎ですか？</span><span class="faq-icon">＋</span></div><div class="faq-a">もちろんです！「使いにくい」「こんな機能があると嬉しい」などの率直な意見もとても参考になります。ぜひ送ってください 😊</div></div>
+        <div class="faq-item rv" style="transition-delay:.1s"><div class="faq-q" onclick="toggleFaq(this)"><span>アプリのフィードバックも歓迎ですか？</span><span class="faq-icon">＋</span></div><div class="faq-a">もちろんです！「使いにくい」「こんな機能があると嬉しい」などの率直な意見もとても参考になります。ぜひ送ってください。</div></div>
         <div class="faq-item rv" style="transition-delay:.15s"><div class="faq-q" onclick="toggleFaq(this)"><span>技術的な質問でも大丈夫ですか？</span><span class="faq-icon">＋</span></div><div class="faq-a">SwiftUI・OutSystems・JavaScript などに関する質問も歓迎です。一緒に考えましょう！ただし、すぐに答えられない場合もある点はご了承ください。</div></div>
       </div>
     </div>
   </section>
 
-  <footer><span class="footer-logo" onclick="showPage('home')">🍎 Yuto<span>.</span></span><p>© 2025 <a href="#" onclick="showPage('home')">Yuto</a>. Made with ❤️ &amp; ☕ in Japan</p></footer>
+  <footer><span class="footer-logo" onclick="showPage('home')"><span class="ic inline-ic" data-icon="apple"></span>Yuto<span>.</span></span><p>© 2025 <a href="#" onclick="showPage('home')">Yuto</a>. Made with <span class="ic inline-ic" data-icon="heart"></span>&amp; <span class="ic inline-ic" data-icon="coffee"></span>in Japan</p></footer>
 </div>
 
+<script src="icons.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

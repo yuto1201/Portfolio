@@ -372,6 +372,8 @@ nav ul li a:hover::after,nav ul li a.active::after{left:0;right:0}
 .app-visual:hover .app-visual-emoji{transform:scale(1.12) translateY(-8px)}
 .app-status-badge{position:absolute;top:16px;right:16px;z-index:2;font-size:.7rem;font-weight:800;padding:5px 12px;border-radius:99px;backdrop-filter:blur(8px)}
 .status-dev{background:rgba(255,209,102,.85);color:#5a3e00}
+.status-released{background:rgba(114,217,184,.9);color:#134e36}
+.status-coming{background:rgba(133,199,242,.85);color:#0e3a60}
 .status-live{background:rgba(114,217,184,.85);color:#1a5c42}
 .status-planned{background:rgba(184,169,240,.85);color:#3d2a7a}
 .app-info-name{font-family:'Nunito',sans-serif;font-weight:900;font-size:clamp(1.6rem,3.5vw,2.4rem);color:var(--text);line-height:1.1;margin-bottom:12px;transition:color .35s}
@@ -436,6 +438,80 @@ footer{text-align:center;padding:36px;background:var(--bg2);border-top:1.5px sol
 .footer-logo{font-family:'Nunito',sans-serif;font-weight:900;font-size:1.3rem;color:var(--text);margin-bottom:10px;display:inline-block;cursor:pointer;transition:color .35s}
 .footer-logo span{color:var(--peach)}
 footer a{color:var(--peach);text-decoration:none;font-weight:800}
+
+/* ═══════════════════════════════════════════════
+   ICONS
+═══════════════════════════════════════════════ */
+.ic{line-height:1;color:inherit}
+.ic svg{display:block;width:1em;height:1em;overflow:visible;stroke-width:2.1}
+.skill-icon.ic,.hobby-icon.ic,.tool-icon.ic,.story-card-icon.ic,.avatar-emoji.ic,.cta-emoji.ic,.learn-icon.ic,.success-emoji.ic,.app-thumb-emoji.ic,.app-visual-emoji.ic{display:inline-flex;align-items:center;justify-content:center}
+.skill-icon.ic svg{stroke-width:1.9}
+.hobby-icon.ic svg,.tool-icon.ic svg,.story-card-icon.ic svg,.learn-icon.ic svg{stroke-width:1.9}
+.cta-emoji.ic svg,.success-emoji.ic svg{stroke-width:1.7}
+.avatar-emoji.ic svg{stroke-width:1.4}
+.app-thumb-emoji.ic svg,.app-visual-emoji.ic svg{stroke-width:1.6;color:#fff;filter:drop-shadow(0 6px 14px rgba(0,0,0,.25))}
+.skill-icon-box.ic svg{width:1.5em;height:1.5em;stroke-width:2}
+.tl-dot.ic svg{width:1.25em;height:1.25em;stroke-width:2.2;color:var(--peach)}
+.inline-ic svg{stroke-width:2.3}
+.em-ic svg,.fact-icon.ic svg,.c-icon.ic svg{stroke-width:2.2}
+.tl-item:nth-child(2n) .tl-dot.ic svg{color:var(--lav)}
+.tl-item:nth-child(3n) .tl-dot.ic svg{color:var(--mint)}
+.fact-icon.ic{display:inline-flex;align-items:center;justify-content:center;font-size:1.15rem;color:var(--peach)}
+.fact-icon.ic svg{width:1em;height:1em}
+.c-icon.ic{display:inline-flex;align-items:center;justify-content:center;color:var(--peach)}
+.c-icon.ic svg{width:1.2em;height:1.2em}
+.em-ic{display:inline-flex;vertical-align:-.12em;font-style:normal;color:var(--peach);font-size:.88em}
+.em-ic svg{stroke-width:1.7}
+.inline-ic{display:inline-flex;align-items:center;justify-content:center;vertical-align:-.18em;width:1.15em;height:1.15em;margin-right:6px;color:inherit;flex-shrink:0}
+.inline-ic svg{width:100%;height:100%}
+.logo-emoji.ic{display:inline-flex;align-items:center;color:var(--peach);margin-right:6px;width:1.15em;height:1.15em;vertical-align:-.12em}
+.logo-emoji.ic svg{width:100%;height:100%}
+.theme-ic{display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;color:var(--peach)}
+.theme-ic svg{width:100%;height:100%;stroke-width:2}
+[data-theme=dark] .theme-ic{color:var(--yellow)}
+.dst.ic{display:flex;align-items:center;justify-content:center;width:24px;height:24px;color:var(--peach)}
+.dst.ic svg{width:100%;height:100%;stroke-width:1.7}
+.dst2.ic,.dst3.ic{color:var(--lav)}
+.faq-icon{font-family:'Nunito',sans-serif}
+.btn-send-full .inline-ic,.btn-send .inline-ic,.btn .inline-ic{margin-right:0;margin-left:6px}
+.btn .inline-ic:first-child,.btn-send .inline-ic:first-child,.btn-send-full .inline-ic:first-child{margin-right:6px;margin-left:0}
+.skill-card-lg .skill-icon-box.ic{color:var(--peach)}
+.sc-mint .skill-icon-box.ic{color:var(--mint)}
+.sc-yellow .skill-icon-box.ic{color:var(--yellow)}
+.sc-lav .skill-icon-box.ic{color:var(--lav)}
+.sc-sky .skill-icon-box.ic{color:var(--sky)}
+.sc-pink .skill-icon-box.ic{color:var(--pink)}
+.skill-card.sc-peach .skill-icon.ic{color:var(--peach)}
+.skill-card.sc-mint .skill-icon.ic{color:var(--mint)}
+.skill-card.sc-yellow .skill-icon.ic{color:var(--yellow)}
+.skill-card.sc-lav .skill-icon.ic{color:var(--lav)}
+.skill-card.sc-sky .skill-icon.ic{color:var(--sky)}
+.skill-card.sc-pink .skill-icon.ic{color:var(--pink)}
+.hobby-icon.ic,.tool-icon.ic,.story-card-icon.ic{color:var(--peach)}
+.hobby-card:nth-child(2n) .hobby-icon.ic{color:var(--lav)}
+.hobby-card:nth-child(3n) .hobby-icon.ic{color:var(--mint)}
+.hobby-card:nth-child(4n) .hobby-icon.ic{color:var(--sky)}
+.hobby-card:nth-child(5n) .hobby-icon.ic{color:var(--pink)}
+.tool-chip:nth-child(2n) .tool-icon.ic{color:var(--lav)}
+.tool-chip:nth-child(3n) .tool-icon.ic{color:var(--mint)}
+.tool-chip:nth-child(4n) .tool-icon.ic{color:var(--sky)}
+.story-card:nth-child(2n) .story-card-icon.ic{color:var(--mint)}
+.story-card:nth-child(3n) .story-card-icon.ic{color:var(--lav)}
+.story-card:nth-child(4n) .story-card-icon.ic{color:var(--sky)}
+.learn-icon.ic{color:var(--peach)}
+.learn-card:nth-child(2n) .learn-icon.ic{color:var(--lav)}
+.learn-card:nth-child(3n) .learn-icon.ic{color:var(--mint)}
+.learn-card:nth-child(4n) .learn-icon.ic{color:var(--sky)}
+.cta-emoji.ic{color:var(--peach)}
+.cta-green .cta-emoji.ic{color:var(--mint)}
+.cta-warm .cta-emoji.ic{color:var(--lav)}
+.success-emoji.ic{color:var(--mint)}
+.av-badge .inline-ic{color:var(--peach);margin-right:4px;width:1em;height:1em}
+.avatar-emoji.ic{color:var(--peach);font-size:5.5rem}
+.page-eyebrow .inline-ic{color:var(--peach);margin-right:8px}
+.badge-dot+.inline-ic{color:var(--peach);margin-right:4px}
+.marquee-item .mi.ic{display:inline-flex;align-items:center;color:#fff;width:1em;height:1em}
+.marquee-item .mi.ic svg{stroke-width:2}
 
 /* ═══════════════════════════════════════════════
    RESPONSIVE
